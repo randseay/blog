@@ -1,22 +1,16 @@
-'use client';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 
-import useTheme from '@hooks/useTheme';
+import ThemeSwitch from '@components/ThemeSwitch';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  // const { theme, toggle } = useTheme();
-  // console.log({ theme });
-
   return (
     <main>
-      <h1 className="dark:text-white text-gray-800 text-5xl">Hello There</h1>
+      <ThemeSwitch />
 
-      {/* <button className="text-blue-600" onClick={() => toggle()}>
-        Toggle
-      </button> */}
+      <h1 className="dark:text-white text-gray-800 text-5xl">Hello There</h1>
 
       <Image
         src="/headshot.jpg"

@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
+import { ServerThemeProvider } from 'next-themes';
+
+import Providers from './providers';
 
 import './globals.css';
 
@@ -16,11 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="bg-gray-100 dark:bg-gray-900">
-        <>{children}</>
-        <Script src="/theme.js" strategy="beforeInteractive" />
-      </body>
-    </html>
+    <ServerThemeProvider attribute="class">
+      <html lang="en" className={inter.className} suppressHydrationWarning>
+        <body className="bg-gray-100 dark:bg-gray-900">
+          <Providers>{children}</Providers>
+        </body>
+      </html>
+    </ServerThemeProvider>
   );
 }
