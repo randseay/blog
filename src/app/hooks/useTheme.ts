@@ -1,22 +1,35 @@
 import useLocalStorage from '@hooks/useLocalStorage';
+import { useEffect, useState } from 'react';
 
 export default function useTheme() {
-  const isDark = (localStorage.theme = 'dark');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const themeNotFound = !('theme' in localStorage);
-  const osPref = isDark || (themeNotFound && prefersDark) ? 'dark' : 'light';
-  const [theme, setTheme] = useLocalStorage('theme', osPref);
-  console.log({ prefersDark, osPref });
+  const [theme, setTheme] = useState(null);
+  // const [theme, setTheme] = useLocalStorage(
+  //   'theme',
+  //   localStorage.getItem('theme') || 'os'
+  // );
 
-  const updateTheme = (t: 'dark' | 'light') => {
-    if (t === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+  useEffect(() => {
+    if (window !== undefined) {
+      const osPrefersDark = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches;
+
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else if (osPrefersDark) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+
+      localStorage.setItem('theme', theme);
     }
+  }, [theme]);
 
-    setTheme(t);
-  };
+  const toggle = () =>
+    setTheme(theme === 'os' ? 'dark' : theme === 'dark' ? 'light' : 'os');
 
-  return [theme, updateTheme] as const;
+  return { theme, setTheme, toggle } as const;
 }

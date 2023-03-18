@@ -17,17 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>
-        <>
-          {children}
-          <Script strategy="beforeInteractive">
-            {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-          } else {
-            document.documentElement.classList.remove('dark');
-          }`}
-          </Script>
-        </>
+      <body className="bg-gray-100 dark:bg-gray-900">
+        <>{children}</>
+        <Script src="/theme.js" strategy="beforeInteractive" />
       </body>
     </html>
   );

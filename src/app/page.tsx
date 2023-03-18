@@ -7,14 +7,16 @@ import useTheme from '@hooks/useTheme';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  const [theme, updateTheme] = useTheme();
+  // const { theme, toggle } = useTheme();
+  // console.log({ theme });
 
   return (
     <main>
       <h1 className="dark:text-white text-gray-800 text-5xl">Hello There</h1>
 
-      <button onClick={() => updateTheme('light')}>Light</button>
-      <button onClick={() => updateTheme('dark')}>Dark</button>
+      {/* <button className="text-blue-600" onClick={() => toggle()}>
+        Toggle
+      </button> */}
 
       <Image
         src="/headshot.jpg"
