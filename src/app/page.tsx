@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <ThemeSwitch />
 
-      <h1 className="dark:text-white text-gray-800 text-5xl">Hello There</h1>
+      <h1 className="text-5xl text-gray-800 dark:text-white">Hello There</h1>
 
       <Image
         src="/headshot.jpg"
