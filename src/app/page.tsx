@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 
-import ThemeSwitch from '@components/ThemeSwitch';
+import Header from '@components/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main>
-      <ThemeSwitch />
+      <Header />
 
       <h1 className="text-5xl text-gray-800 dark:text-white">Hello There</h1>
 
