@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['var(--font-inter)', 'Helvetica', 'Arial', 'sans-serif'],
+        mono: ['var(--font-source-code-pro)', 'Courier', 'monospace'],
+        display: ['var(--font-roboto-serif)', 'Garamond', 'serif'],
       },
     },
   },
