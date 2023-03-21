@@ -34,7 +34,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${inter.variable} ${sourceCodePro.variable} ${robotoSerif.variable}`}
       >
-        <body className="bg-gray-100 dark:bg-gray-900">
+        <body className="bg-gray-100 text-gray-800 transition duration-300 dark:bg-gray-900 dark:text-white">
           <Providers>{children}</Providers>
         </body>
       </html>
