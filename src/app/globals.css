@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Base Styles
+ */
+
 html,
 body {
   max-width: 100vw;
@@ -15,4 +19,8 @@ body {
   html {
     color-scheme: dark;
   }
+}
+
+a {
+  @apply font-normal text-blue-500 hover:underline dark:text-amber-300;
 }
