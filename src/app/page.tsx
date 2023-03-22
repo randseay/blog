@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 import PageWrap from '@components/PageWrap';
+import ButtonLink from '@components/ButtonLink';
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
           width={300}
           height={300}
           priority
-          className="rounded-full outline outline-offset-8 outline-amber-600 dark:outline-blue-300"
+          className="rounded-full outline outline-offset-8 outline-amber-500 dark:outline-blue-300"
         />
 
         <div className="flex flex-col gap-y-4">
@@ -25,6 +27,14 @@ export default function Home() {
             <a href="https://cloud.google.com/bigquery">BigQuery</a> and{' '}
             <a href="https://kaggle.com">Kaggle</a>.
           </p>
+
+          <div className="inline-flex">
+            <ButtonLink href="/about">
+              <span className="flex items-center gap-x-1">
+                More <ArrowRightIcon className="h-5 w-5" />
+              </span>
+            </ButtonLink>
+          </div>
         </div>
       </PageWrap>
     </main>
