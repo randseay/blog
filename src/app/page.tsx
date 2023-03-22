@@ -1,14 +1,8 @@
 import Image from 'next/image';
 
-import Header from '@components/Header';
-
 export default function Home() {
   return (
     <main>
-      <div className="w-full border-b border-gray-300 dark:border-gray-700">
-        <Header />
-      </div>
-
       <div className="mx-auto my-8 flex max-w-3xl items-center gap-x-8">
         <Image
           src="/headshot.jpg"

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Logo from '@components/Logo';
 import ThemeSwitch from '@components/ThemeSwitch';
 
@@ -12,7 +14,14 @@ export default function Header() {
         <h1 className="font-display text-2xl font-light">Rand Seay</h1>
       </div>
 
-      <ThemeSwitch />
+      <div className="flex items-center gap-x-4">
+        <nav className="flex gap-x-2">
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+        </nav>
+
+        <ThemeSwitch />
+      </div>
     </div>
   );
 }
