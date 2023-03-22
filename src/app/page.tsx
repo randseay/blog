@@ -3,6 +3,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 import PageWrap from '@components/PageWrap';
 import ButtonLink from '@components/ButtonLink';
+import TextLink from '@components/TextLink';
 
 export default function Home() {
   return (
@@ -22,10 +23,12 @@ export default function Home() {
 
           <p>
             I'm Rand, a Senior Frontend Engineer with{' '}
-            <a href="https://dispel.com/">Dispel</a>. I was formerly with Google
-            Cloud at both{' '}
-            <a href="https://cloud.google.com/bigquery">BigQuery</a> and{' '}
-            <a href="https://kaggle.com">Kaggle</a>.
+            <TextLink href="https://dispel.com/">Dispel</TextLink>. I was
+            formerly with Google Cloud at both{' '}
+            <TextLink href="https://cloud.google.com/bigquery">
+              BigQuery
+            </TextLink>{' '}
+            and <TextLink href="https://kaggle.com">Kaggle</TextLink>.
           </p>
 
           <div className="inline-flex">
