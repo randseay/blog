@@ -24,3 +24,7 @@ body {
 a {
   @apply font-normal text-blue-500 hover:underline dark:text-amber-300;
 }
+
+p {
+  @apply text-2xl font-light;
+}
