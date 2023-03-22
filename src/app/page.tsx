@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
-import PageWrap from '@components/PageWrap';
 import ButtonLink from '@components/ButtonLink';
+import PageWrap from '@components/PageWrap';
+import Paragraph from '@components/Paragraph';
 import TextLink from '@components/TextLink';
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="flex flex-col gap-y-4">
           <h1 className="font-display text-8xl">Hi 👋</h1>
 
-          <p>
+          <Paragraph>
             I'm Rand, a Senior Frontend Engineer with{' '}
             <TextLink href="https://dispel.com/">Dispel</TextLink>. I was
             formerly with Google Cloud at both{' '}
@@ -29,7 +30,7 @@ export default function Home() {
               BigQuery
             </TextLink>{' '}
             and <TextLink href="https://kaggle.com">Kaggle</TextLink>.
-          </p>
+          </Paragraph>
 
           <div className="inline-flex">
             <ButtonLink href="/about">

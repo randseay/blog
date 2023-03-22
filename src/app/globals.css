@@ -20,7 +20,3 @@ body {
     color-scheme: dark;
   }
 }
-
-p {
-  @apply text-2xl font-light;
-}

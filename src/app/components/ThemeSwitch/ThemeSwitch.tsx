@@ -28,7 +28,7 @@ export default function ThemeSwitch() {
 
   return (
     <div className="flex items-center gap-x-1">
-      <p className="text-base text-gray-500 dark:text-gray-400">Theme</p>
+      <p className="text-gray-500 dark:text-gray-400">Theme</p>
 
       <button
         onClick={changeTheme}
