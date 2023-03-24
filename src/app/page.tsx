@@ -20,7 +20,7 @@ export default function Home() {
         />
 
         <div className="flex flex-col gap-y-4">
-          <h1 className="font-display text-8xl">Hi 👋</h1>
+          <h1 className="font-display text-8xl">Hello</h1>
 
           <Paragraph>
             I'm Rand, a Senior Frontend Engineer with{' '}
