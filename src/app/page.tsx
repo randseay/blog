@@ -3,7 +3,6 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 import ButtonLink from '@components/ButtonLink';
 import PageWrap from '@components/PageWrap';
-import Paragraph from '@components/Paragraph';
 import TextLink from '@components/TextLink';
 
 export default function Home() {
@@ -22,7 +21,7 @@ export default function Home() {
         <div className="flex flex-col gap-y-4">
           <h1 className="font-display text-8xl">Hello</h1>
 
-          <Paragraph>
+          <p className="text-2xl font-light">
             I'm Rand, a Senior Frontend Engineer with{' '}
             <TextLink href="https://dispel.com/">Dispel</TextLink>. I was
             formerly with Google Cloud at both{' '}
@@ -30,7 +29,7 @@ export default function Home() {
               BigQuery
             </TextLink>{' '}
             and <TextLink href="https://kaggle.com">Kaggle</TextLink>.
-          </Paragraph>
+          </p>
 
           <div className="inline-flex">
             <ButtonLink href="/about">
