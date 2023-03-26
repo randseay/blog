@@ -3,7 +3,7 @@ import Link, { LinkProps } from 'next/link';
 import { HTMLAttributes } from 'react';
 
 type Props = {
-  variant: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary';
 };
 
 export default function ButtonLink({
