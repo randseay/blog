@@ -3,14 +3,14 @@ import classNames from 'classnames';
 import Link, { LinkProps } from 'next/link';
 import { HTMLAttributes } from 'react';
 
-type TextLinkProps = {
+type Props = {
   variant?: 'primary' | 'secondary';
 };
 
 export default function TextLink({
   variant = 'primary',
   ...rest
-}: TextLinkProps & LinkProps & HTMLAttributes<HTMLAnchorElement>) {
+}: Props & LinkProps & HTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       className={classNames('font-regular hover:underline', {

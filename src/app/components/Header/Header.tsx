@@ -1,5 +1,5 @@
+import ButtonLink from '@components/ButtonLink';
 import Logo from '@components/Logo';
-import TextLink from '@components/TextLink';
 import ThemeSwitch from '@components/ThemeSwitch';
 
 export default function Header() {
@@ -13,14 +13,14 @@ export default function Header() {
         <h1 className="font-display text-2xl font-light">Rand Seay</h1>
       </div>
 
-      <div className="flex items-center gap-x-8">
-        <nav className="flex items-center gap-x-4 text-lg">
-          <TextLink variant="secondary" href="/">
+      <div className="flex items-center gap-x-6">
+        <nav className="flex items-center gap-x-2">
+          <ButtonLink variant="secondary" href="/">
             Home
-          </TextLink>
-          <TextLink variant="secondary" href="/about">
+          </ButtonLink>
+          <ButtonLink variant="secondary" href="/about">
             About
-          </TextLink>
+          </ButtonLink>
         </nav>
 
         <ThemeSwitch />
