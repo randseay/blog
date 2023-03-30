@@ -19,16 +19,12 @@ export default function Home() {
         />
 
         <div className="flex flex-col gap-y-4">
-          <h1 className="font-display text-8xl">Hello</h1>
+          <h1 className="font-display text-8xl">Hello!</h1>
 
           <p className="text-2xl font-light">
-            I'm Rand, a Senior Frontend Engineer with{' '}
-            <TextLink href="https://dispel.com/">Dispel</TextLink>. I was
-            formerly with Google Cloud at both{' '}
-            <TextLink href="https://cloud.google.com/bigquery">
-              BigQuery
-            </TextLink>{' '}
-            and <TextLink href="https://kaggle.com">Kaggle</TextLink>.
+            My name is Rand, and I am a husband, father, and frontend engineer.
+            I love collaborating with talented people in the space where
+            engineering meets design.
           </p>
 
           <div className="inline-flex">
