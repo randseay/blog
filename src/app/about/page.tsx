@@ -13,6 +13,12 @@ export default function About() {
         <TextLink href="https://cloud.google.com/bigquery">BigQuery</TextLink>{' '}
         and <TextLink href="https://kaggle.com">Kaggle</TextLink>.
       </p>
+
+      <p>
+        My wife and I and our three kids are in the greater Portland area, and
+        love the Pacific Northwest. I enjoy woodworking, cooking, and playing
+        basketball.
+      </p>
     </PageWrap>
   );
 }
