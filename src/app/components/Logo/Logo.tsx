@@ -13,7 +13,7 @@ export default function Logo() {
       </defs>
       <g id="g8" transform="matrix(1.3333333,0,0,-1.3333333,0,310.30267)">
         <g id="g10">
-          <g id="g12" clip-path="url(#clipPath16)">
+          <g id="g12" clipPath="url(#clipPath16)">
             <g id="g18" transform="translate(116.3638,232.7266)">
               <path
                 d="m 0,0 c -64.267,0 -116.364,-52.098 -116.364,-116.362 0,-64.267 52.097,-116.365 116.364,-116.365 64.267,0 116.365,52.098 116.365,116.365 C 116.365,-52.098 64.268,0 0,0"
