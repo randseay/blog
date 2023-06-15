@@ -1,14 +1,20 @@
 import PageWrap from '@components/PageWrap';
-import TextLink from '@components/TextLink';
+import Prose from '@components/Prose';
 
 export default function About() {
   return (
     <PageWrap>
-      <h1 className="mb-4 font-display text-3xl font-medium">
-        How I got started
-      </h1>
+      <Prose>
+        <h1>More About Me</h1>
 
-      <p className="mb-4 text-2xl font-light"></p>
+        <p>
+          My formal education is from the University of North Dakota, where I
+          received my Bachelor of Fine Arts in Graphic Design & New Art Media.
+          After a successful start as a graphic designer at the great ad agency,
+          Ad Monkeys in Grand Forks, ND, I dove headlong into learning web
+          development.
+        </p>
+      </Prose>
     </PageWrap>
   );
 }
