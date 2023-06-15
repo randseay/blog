@@ -13,7 +13,7 @@ export default function IconButton({
   return (
     <Link
       className={classNames({
-        'text-amber-500 hover:text-amber-400 dark:text-blue-500 dark:hover:text-blue-400':
+        'text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-gray-300':
           variant === 'primary',
         'text-gray-800 hover:bg-gray-200 hover:text-amber-600 dark:hover:bg-gray-800 dark:hover:text-blue-300':
           variant === 'secondary',
