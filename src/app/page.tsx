@@ -49,7 +49,7 @@ export default function Home() {
           <h2>A Little About Me</h2>
 
           <p>
-            I'm a Senior Frontend Engineer with{' '}
+            I'm the Lead Frontend Engineer at{' '}
             <Link href="https://dispel.com/">Dispel</Link>. I was formerly with
             Google Cloud at both{' '}
             <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and{' '}
