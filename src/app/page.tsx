@@ -50,8 +50,8 @@ export default function Home() {
 
           <p>
             I'm the Lead Frontend Engineer at{' '}
-            <Link href="https://dispel.com/">Dispel</Link>. I was formerly with
-            Google Cloud at both{' '}
+            <Link href="https://dispel.com/">Dispel</Link>. I was formerly with{' '}
+            <Link href="https://cloud.google.com/">Google Cloud</Link> at both{' '}
             <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and{' '}
             <Link href="https://kaggle.com">Kaggle</Link>.
           </p>
