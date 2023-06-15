@@ -1,20 +1,13 @@
 import PageWrap from '@components/PageWrap';
 import Prose from '@components/Prose';
 
+import Content from './content.mdx';
+
 export default function About() {
   return (
     <PageWrap>
       <Prose>
-        <h1>More About Me</h1>
-
-        <p>
-          I'm a software engineer with a passion for solving complex problems
-          and building innovative applications. My formal education is from the
-          University of North Dakota, where I received my Bachelor of Fine Arts
-          in Graphic Design & New Art Media. After a successful start as a
-          graphic designer at the great ad agency, Ad Monkeys in Grand Forks,
-          ND, I dove headlong into learning web development.
-        </p>
+        <Content />
       </Prose>
     </PageWrap>
   );
