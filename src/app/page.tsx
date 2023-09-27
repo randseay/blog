@@ -53,7 +53,9 @@ export default function Home() {
             <Link href="https://dispel.com/">Dispel</Link>. I was formerly with{' '}
             <Link href="https://cloud.google.com/">Google Cloud</Link> at both{' '}
             <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and{' '}
-            <Link href="https://kaggle.com">Kaggle</Link>.
+            <Link href="https://kaggle.com">Kaggle</Link>, and have been with
+            multiple successful startups over the course of my engineering
+            career that started in 2012.
           </p>
 
           <p>
