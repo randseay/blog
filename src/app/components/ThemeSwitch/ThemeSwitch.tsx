@@ -28,11 +28,14 @@ export default function ThemeSwitch() {
 
   return (
     <div className="flex items-center gap-x-1">
-      <p className="font-light text-gray-500 dark:text-gray-400">Theme</p>
+      <p className="hidden font-light text-gray-500 dark:text-gray-400 sm:block">
+        Theme
+      </p>
 
       <button
         onClick={changeTheme}
         className="rounded-full p-2 text-amber-600 hover:bg-gray-200 hover:text-gray-900 dark:text-blue-300 dark:hover:bg-gray-800 dark:hover:text-white"
+        title="Switch Theme Button"
       >
         {theme === 'light' ? (
           <SunIcon className="h-6 w-6" />

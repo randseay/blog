@@ -13,11 +13,13 @@ export default function Header() {
             <Logo />
           </div>
 
-          <h1 className="font-display text-2xl font-light">Rand Seay</h1>
+          <h1 className="text-l font-display font-light sm:text-2xl">
+            Rand Seay
+          </h1>
         </div>
       </Link>
 
-      <div className="flex items-center gap-x-6">
+      <div className="flex items-center gap-x-3 sm:gap-x-6">
         <nav className="flex items-center gap-x-2">
           <ButtonLink variant="secondary" href="/about">
             About

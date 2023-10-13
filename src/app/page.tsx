@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <PageWrap>
-        <div className="flex items-center gap-x-16">
+        <div className="flex flex-col items-center gap-16 sm:flex-row">
           <Prose>
             <h1>Hello!</h1>
 
