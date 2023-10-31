@@ -39,7 +39,7 @@ export default function Home() {
             width={275}
             height={275}
             priority
-            className="rounded-full outline outline-offset-8 outline-amber-500 dark:outline-blue-300"
+            className="rounded-full outline outline-offset-8 outline-amber-500 dark:outline-blue-300 sm:mr-3"
           />
         </div>
 
