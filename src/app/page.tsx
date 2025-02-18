@@ -14,7 +14,7 @@ export default function Home() {
       <PageWrap>
         <div className="flex flex-col items-center gap-16 sm:flex-row">
           <Prose>
-            <h1>Hello!</h1>
+            <h1>👋 Hello!</h1>
 
             <p>
               My name is Rand, and I am a husband, father, and frontend

@@ -24,6 +24,9 @@ export default function Header() {
           <ButtonLink variant="secondary" href="/about">
             About
           </ButtonLink>
+          <ButtonLink variant="secondary" href="/articles">
+            Articles
+          </ButtonLink>
         </nav>
 
         <ThemeSwitch />

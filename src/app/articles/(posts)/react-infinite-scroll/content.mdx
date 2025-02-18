@@ -1,0 +1,24 @@
+# React Infinite Scroll Component
+
+<Published />
+
+As increasing amounts of data are loaded into a web application, it can become
+necessary to introduce pagination patterns to improve the performance as well as
+the user experience. A common pattern for handling this is the "infinite scroll"
+paradigm. Infinite scroll is a design pattern that loads content continuously as
+the user scrolls down the page, eliminating the need for traditional pagination
+controls.
+
+Many data fetching libraries support this style of pagination, and provide easy
+ways to integrate data fetching. One example is
+[TanStack Query's `useInfiniteQuery` hook](https://tanstack.com/query/v4/docs/framework/react/reference/useInfiniteQuery).
+These libraries leave it up to you to decide when to fetch more data, and one of
+the more elegant ways I've found to handle this is to create a reusable
+component whose sole concern is to request more data. Below is an
+`InfiniteScroll` React component using the
+[`IntersectionObserver` API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+
+<Editor />
+
+All that is left to do is wire up the data fetching logic to the exposed
+properties: `children`, `fetchMore`, and `hasMore`.

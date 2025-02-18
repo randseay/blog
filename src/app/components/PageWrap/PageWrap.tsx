@@ -7,7 +7,12 @@ interface PageWrapProps {
 
 export default function PageWrap({ children, className }: PageWrapProps) {
   return (
-    <div className={classNames('mx-auto my-16 max-w-5xl px-4', className)}>
+    <div
+      className={classNames(
+        'mx-auto my-16 flex max-w-5xl flex-col px-4',
+        className
+      )}
+    >
       {children}
     </div>
   );
