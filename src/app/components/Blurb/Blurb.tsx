@@ -17,7 +17,7 @@ export default function Blurb() {
       <Prose>
         <h3>Written by Rand Seay</h3>
         <p>
-          👋 Hi! I'm a husband, father, and frontend engineer. I love
+          👋 Hi! I&apos;m a husband, father, and frontend engineer. I love
           collaborating in the space where engineering meets design. Learn more{' '}
           <Link href="/about">about me</Link>.
         </p>
