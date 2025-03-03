@@ -10,12 +10,16 @@ export default function Articles() {
     <PageWrap>
       <Prose>
         <h1>Articles</h1>
-        {posts.map((post, i) => (
-          <span key={`post-${i}`} className="flex items-center gap-x-4">
-            <Link href={post.link}>{post.title}</Link>
-            <DateTimeStamp date={post.published} />
-          </span>
-        ))}
+        <div className="flex flex-col gap-y-4">
+          {posts.map((post, i) =>
+            !!post.published ? (
+              <span key={`post-${i}`} className="flex items-center gap-x-4">
+                <Link href={post.link}>{post.title}</Link>
+                <DateTimeStamp date={post.published} />
+              </span>
+            ) : null
+          )}
+        </div>
       </Prose>
     </PageWrap>
   );
