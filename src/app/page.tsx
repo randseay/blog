@@ -34,7 +34,7 @@ export default function Home() {
           </Prose>
 
           <Image
-            src="/headshot.jpg"
+            src="/2024-04-headshot.jpg"
             alt="Headshot of Rand"
             width={275}
             height={275}

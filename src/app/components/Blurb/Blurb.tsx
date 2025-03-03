@@ -8,7 +8,7 @@ export default function Blurb() {
     <div className="flex items-center gap-10 border-t-2 border-gray-200/80 pt-10 dark:border-gray-800">
       <div>
         <Image
-          src="/headshot.jpg"
+          src="/2024-04-headshot.jpg"
           alt="Headshot of Rand"
           width={150}
           height={150}
