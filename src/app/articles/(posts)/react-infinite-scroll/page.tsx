@@ -74,8 +74,8 @@ export default function InfiniteScrollArticle() {
       <Prose>
         <Content
           components={{
-            Published() {
-              return <DateTimeStamp date="02-17-2025" />;
+            Published({ date }: { date: string}) {
+              return <DateTimeStamp date={date} />;
             },
             Editor() {
               return <Editor files={files} />;
