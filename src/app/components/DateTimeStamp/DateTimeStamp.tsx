@@ -7,9 +7,9 @@ export function DateTimeStamp({ date }: { date: string }) {
     day: 'numeric',
   });
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-x-2">
       <CalendarIcon className="h-5 w-5 stroke-2" />
-      <time className="text-xl font-semibold">{timestamp}</time>
+      <span className="text-base font-semibold sm:text-xl">{timestamp}</span>
     </div>
   );
 }
