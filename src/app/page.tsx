@@ -1,14 +1,19 @@
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, RssIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { published } from '@articles/(posts)/posts';
 import ButtonLink from '@components/ButtonLink';
-import IconButton from '@components/IconButton';
+import DateTimeStamp from '@components/DateTimeStamp';
 import { GitHub, LinkedIn } from '@components/Icons';
+import IconButton from '@components/IconButton';
 import PageWrap from '@components/PageWrap';
 import Prose from '@components/Prose';
+import TaggedWith from '@components/TaggedWith';
 
 export default function Home() {
+  const lastPost = published[0];
+
   return (
     <main>
       <PageWrap>
@@ -68,6 +73,45 @@ export default function Home() {
             <ButtonLink href="/about">
               <span className="flex items-center gap-x-1">
                 More about me <ArrowRightIcon className="h-5 w-5 stroke-2" />
+              </span>
+            </ButtonLink>
+          </div>
+        </Prose>
+
+        <hr className="my-16 w-full border-b border-gray-300 dark:border-gray-700" />
+
+        <Prose>
+          <h2 className="flex items-center gap-x-4">
+            Last Article{' '}
+            <IconButton href="/rss" aria-label="RSS Feed">
+              <RssIcon className="h-10 w-10 stroke-2" />
+            </IconButton>
+          </h2>
+
+          <div className="flex flex-col gap-y-10">
+            {lastPost && !!lastPost.published ? (
+              <span className="flex flex-col gap-y-2">
+                <span>
+                  <Link
+                    className="text-2xl font-bold sm:text-3xl"
+                    href={lastPost.link}
+                  >
+                    {lastPost.title}
+                  </Link>
+                </span>
+                <span className="flex flex-col items-start gap-x-4 gap-y-2 sm:flex-row sm:items-center">
+                  <DateTimeStamp date={lastPost.published} />
+                  <span className="hidden sm:flex">&bull;</span>
+                  <TaggedWith tags={lastPost.tags} />
+                </span>
+              </span>
+            ) : null}
+          </div>
+
+          <div className="not-prose mt-8 inline-flex">
+            <ButtonLink href="/articles">
+              <span className="flex items-center gap-x-1">
+                Articles <ArrowRightIcon className="h-5 w-5 stroke-2" />
               </span>
             </ButtonLink>
           </div>

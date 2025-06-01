@@ -1,9 +1,10 @@
 declare module '*.mdx' {
-  let title: string;
-  let published: string;
-  let slug: string;
-  let tags: string[];
+  export const title: string;
+  export const published: string;
+  export const author: string;
+  export const slug: string;
+  export const tags: string[];
+  export const summary: string;
   const MDXComponent: (props: any) => JSX.Element;
-  export { title, published, slug, tags };
   export default MDXComponent;
 }

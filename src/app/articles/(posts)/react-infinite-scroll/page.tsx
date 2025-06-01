@@ -5,7 +5,7 @@ import Prose from '@components/Prose';
 
 import Content from './content.mdx';
 
-const files = {
+export const infiniteScrollFiles = {
   '/App.tsx': `import { InfiniteScroll } from './InfiniteScroll';
 
 export default function App() {
@@ -78,7 +78,7 @@ export default function InfiniteScrollArticle() {
               return <Meta {...props} />;
             },
             Editor() {
-              return <Editor files={files} />;
+              return <Editor files={infiniteScrollFiles} />;
             },
           }}
         />
