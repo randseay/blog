@@ -82,7 +82,7 @@ export default function Home() {
 
         <Prose>
           <h2 className="flex items-center gap-x-4">
-            Last Article{' '}
+            Latest Article{' '}
             <IconButton href="/rss" aria-label="RSS Feed">
               <RssIcon className="h-10 w-10 stroke-2" />
             </IconButton>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="not-prose mt-8 inline-flex">
             <ButtonLink href="/articles">
               <span className="flex items-center gap-x-1">
-                Articles <ArrowRightIcon className="h-5 w-5 stroke-2" />
+                More articles <ArrowRightIcon className="h-5 w-5 stroke-2" />
               </span>
             </ButtonLink>
           </div>
