@@ -36,7 +36,10 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${inter.variable} ${sourceCodePro.variable} ${robotoSerif.variable}`}
       >
-        <body className="bg-gray-100 text-gray-800 transition duration-300 dark:bg-gray-900 dark:text-white">
+        <body
+          key="blog"
+          className="bg-gray-100 text-gray-800 transition duration-300 dark:bg-gray-900 dark:text-white"
+        >
           <Providers>
             <div className="w-full border-b border-gray-300 dark:border-gray-700">
               <Header />

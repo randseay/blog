@@ -6,7 +6,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,19 +16,19 @@
     "@heroicons/react": "^2.0.16",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.5.4",
+    "@next/mdx": "15.3.3",
     "@types/mdx": "^2.0.8",
     "@types/node": "18.15.3",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
+    "@types/react": "19.1.6",
+    "@types/react-dom": "19.1.5",
     "classnames": "^2.3.2",
     "eslint": "8.36.0",
-    "eslint-config-next": "^14.2.29",
+    "eslint-config-next": "15.3.3",
     "feed": "^5.1.0",
-    "next": "^14.2.29",
+    "next": "15.3.3",
     "next-themes": "npm:@wits/next-themes",
-    "react": "18",
-    "react-dom": "18",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "typescript": "4.9.5"
   },
   "devDependencies": {
@@ -39,5 +39,9 @@
     "prettier": "2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "tailwindcss": "^3.2.7"
+  },
+  "resolutions": {
+    "@types/react": "19.1.6",
+    "@types/react-dom": "19.1.5"
   }
 }
