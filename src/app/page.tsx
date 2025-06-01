@@ -1,6 +1,7 @@
 import { ArrowRightIcon, RssIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Suspense } from 'react';
 
 import { published } from '@articles/(posts)/posts';
 import ButtonLink from '@components/ButtonLink';
@@ -11,7 +12,7 @@ import PageWrap from '@components/PageWrap';
 import Prose from '@components/Prose';
 import TaggedWith from '@components/TaggedWith';
 
-export default function Home() {
+function Home() {
   const lastPost = published[0];
 
   return (
@@ -118,5 +119,13 @@ export default function Home() {
         </Prose>
       </PageWrap>
     </main>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense>
+      <Home />
+    </Suspense>
   );
 }

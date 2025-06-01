@@ -1,6 +1,9 @@
 'use client';
+
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
+
 import { published, tags } from '@articles/(posts)/posts';
 import PageWrap from '@components/PageWrap';
 import Prose from '@components/Prose';
@@ -10,7 +13,7 @@ import TaggedWith from '@components/TaggedWith';
 import { RssIcon } from '@heroicons/react/24/outline';
 import IconButton from '@components/IconButton';
 
-export default function Articles() {
+function Articles() {
   const searchParams = useSearchParams();
   const selectedTag = searchParams.get('tag');
 
@@ -63,5 +66,13 @@ export default function Articles() {
         </div>
       </Prose>
     </PageWrap>
+  );
+}
+
+export default function ArticlesPage() {
+  return (
+    <Suspense>
+      <Articles />
+    </Suspense>
   );
 }

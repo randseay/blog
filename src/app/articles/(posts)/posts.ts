@@ -2,7 +2,7 @@ import * as ConnectionCapitalContent from '@articles/(posts)/connection-capital/
 import * as InfiniteScrollContent from '@articles/(posts)/react-infinite-scroll/content.mdx';
 import ConnectionCapitalPost from '@articles/(posts)/connection-capital/content.mdx';
 import InfiniteScrollPost from '@articles/(posts)/react-infinite-scroll/content.mdx';
-import { infiniteScrollFiles } from '@articles/(posts)/react-infinite-scroll/page';
+import { infiniteScrollFiles } from '@articles/(posts)/react-infinite-scroll/files';
 
 export const posts = [
   {
