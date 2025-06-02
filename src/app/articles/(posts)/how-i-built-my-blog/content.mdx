@@ -12,7 +12,7 @@ export const summary =
 
 ## Intro
 
-When it came time to revisiting my personal blog, I wanted to use it as an
+When it came time to revisit my personal blog, I wanted to use it as an
 opportunity to dive deeper into some technologies I found interesting. I decided
 to build it using **Next.js**, **Tailwind CSS**, and **MDX**. This post will
 walk you through the process, the tools I used, and some of the challenges I
@@ -21,12 +21,12 @@ visual aesthetics of documentation sites like [react.dev](https://react.dev/).
 
 ## Overview and Tools
 
-This blog was first built on [Next.js](https://nextjs.org/) 13, and has since
-been updated to 15. At the time the App directory was a new concept, and I was
+This blog was first built on [Next.js](https://nextjs.org/) version 13, and has since
+been updated to version 15. At the time the App directory was a new concept, and I was
 excited to try it out. TypeScript is a non-negotiable for me, and Tailwind CSS
 is just a pleasure to use. I tried to keep the project structure simple. The few
 routes I have are focused on MDX content wherever possible, with Tailwind's
-typography tools providing a clean reading experience. I generally build shared
+typography tools providing a clean reading experience. I generally built shared
 components as I needed them.
 
 ### Styling and Theming
@@ -77,7 +77,7 @@ for users to subscribe to the blog and receive updates. Tag filtering is handled
 through query parameters in the URL, and the RSS feed is generated using the
 [`feed`](https://www.npmjs.com/package/feed) package. This allows me to create a
 customized feed for my blog. This was a perfect combination to use with a
-Next.js api routes, where it can all be handled on the server with no build
+Next.js API routes, where it can all be handled on the server with no build
 step.
 
 ### Deployment
@@ -97,7 +97,7 @@ was getting the MDX setup right, especially with the code editor integration. I
 had to ensure that the code blocks were properly formatted and that the
 interactive examples worked as expected. I'm also not totally satisfied with the
 manual nature of publishing posts. I'd like to get this down to simply creating
-a new mdx file and populating the proper metadata, but I'm not there yet. I came
+a new `.mdx` file and populating the proper metadata, but I'm not there yet. I came
 across an excellent
 [example from Vercel](https://github.com/vercel/examples/tree/main/solutions/blog)
 that I plan to take some inspiration from.
@@ -107,8 +107,8 @@ became outdated quickly and lacked some of the features I wanted to use.
 
 ### Conclusion
 
-Overall I'm really pleased with how this blog turned out. It was a great
-opportunity to learn more about some amazing web technologies. I have a nice
+Overall I'm quite pleased with how this blog turned out. It was a great
+opportunity to learn more about some amazing web technologies, and I have a nice
 direction and ideas for improvements moving forward.
 
 If you have been thinking about building your own blog or personal website, I
