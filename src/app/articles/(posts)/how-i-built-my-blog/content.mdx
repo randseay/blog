@@ -1,0 +1,145 @@
+export const title = 'How I Built My Blog';
+export const published = '2025-06-01';
+export const author = 'Rand Seay';
+export const slug = 'how-i-built-my-blog';
+export const tags = ['react', 'nextjs', 'tailwindcss', 'dev'];
+export const summary =
+  "I built this blog using Next.js, Tailwind CSS, MDX, and published it with Vercel. Here's how I did it and some of the challenges I faced along the way.";
+
+# {title}
+
+<Meta date={published} tags={tags} />
+
+## Intro
+
+When it came time to revisiting my personal blog, I wanted to use it as an
+opportunity to dive deeper into some technologies I found interesting. I decided
+to build it using **Next.js**, **Tailwind CSS**, and **MDX**. This post will
+walk you through the process, the tools I used, and some of the challenges I
+faced along the way. I love writing in markdown, and wanted to emulate the
+visual aesthetics of documentation sites like [react.dev](https://react.dev/).
+
+## Overview and Tools
+
+This blog was first built on [Next.js](https://nextjs.org/) 13, and has since
+been updated to 15. At the time the App directory was a new concept, and I was
+excited to try it out. TypeScript is a non-negotiable for me, and Tailwind CSS
+is just a pleasure to use. I tried to keep the project structure simple. The few
+routes I have are focused on MDX content wherever possible, with Tailwind's
+typography tools providing a clean reading experience. I generally build shared
+components as I needed them.
+
+### Styling and Theming
+
+I used **Tailwind CSS** for styling, which allows for rapid development with
+utility-first CSS classes. I also implemented dark mode using the
+[`next-themes`](https://github.com/pacocoursey/next-themes) package. I have a
+special passion for dark mode, and really enjoyed implementing the theme
+switcher. Give it a shot! You can toggle between light and dark modes, or track
+system preferences.
+
+The design is minimalistic, focusing on readability and ease of navigation. The
+typefaces are on the larger side, and I selected monospace fonts for headings.
+To me, the reading experience is paramount, and I wanted to ensure that the blog
+is accessible and enjoyable to read.
+
+As a side note, I really loved the idea of changing the primary colors between
+light and dark mode, while making the opposite theme's primary color the
+secondary color. I think this worked out pretty well, and I hope you like it
+too!
+
+## Writing Experience
+
+I wanted to create a writing experience that was both enjoyable and efficient.
+For me, that is markdown without all of the distractions of a WYSIWYG editor or
+complex tooling. I use [MDX](https://mdxjs.com/) to write posts, which allows me
+to combine markdown with necessary React components. This gives me the
+flexibility to inject code blocks or leverage more carefully styled components.
+
+Importing and listing the blogs is one of the areas I intend to streamline, as
+it is a bit cumbersome right now. I have a directory structure that organizes
+the posts and assembles them into a list, but I would like to automate this
+further in the future.
+
+The code editor is powered by
+[@codesandbox/sandpack-react](https://sandpack.dev/), which allows me to embed
+interactive code examples directly into my posts. Setting this up is a bit
+manual, and definitely another area I want to improve in the future. I'm able to
+supply a template string for the code examples, which makes it easier to manage
+and update them.
+
+### Dynamic Features
+
+For now I have targeted tag filtering and RSS feed generation as the main
+dynamic features of the blog. The tag filtering allows readers to easily find
+articles by their associated tags, while the RSS feed generation provides a way
+for users to subscribe to the blog and receive updates. Tag filtering is handled
+through query parameters in the URL, and the RSS feed is generated using the
+[`feed`](https://www.npmjs.com/package/feed) package. This allows me to create a
+customized feed for my blog. This was a perfect combination to use with a
+Next.js api routes, where it can all be handled on the server with no build
+step.
+
+### Deployment
+
+Vercel is the hosting platform I chose for this blog, as it integrates
+seamlessly with Next.js and provides a great developer experience. Deployment is
+straightforward, and Vercel's serverless functions allow me to handle dynamic
+features like the RSS feed generation without any hassle. From adding to a
+domain to monitoring deployments, Vercel has made the process smooth and
+efficient. I couldn't ask for anything better in terms of deployment and
+hosting.
+
+### Challenges
+
+While building this blog, I faced several challenges. One of the main challenges
+was getting the MDX setup right, especially with the code editor integration. I
+had to ensure that the code blocks were properly formatted and that the
+interactive examples worked as expected. I'm also not totally satisfied with the
+manual nature of publishing posts. I'd like to get this down to simply creating
+a new mdx file and populating the proper metadata, but I'm not there yet. I came
+across an excellent
+[example from Vercel](https://github.com/vercel/examples/tree/main/solutions/blog)
+that I plan to take some inspiration from.
+
+I also really needed to upgrade to Next.js 15 much sooner than I did, version 13
+became outdated quickly and lacked some of the features I wanted to use.
+
+### Conclusion
+
+Overall I'm really pleased with how this blog turned out. It was a great
+opportunity to learn more about some amazing web technologies. I have a nice
+direction and ideas for improvements moving forward.
+
+If you have been thinking about building your own blog or personal website, I
+highly encourage you to take the plunge. There are so many great tools and
+resources available that make it easier than ever to get started. There are some
+great templates you can leverage, but rolling your own is full of amazing
+learning opportunities and can be a lot of fun. I hope this post has given you
+some insight into how I built my blog and the tools I used along the way. If you
+have any questions or suggestions, feel free to reach out!
+
+P.S. Don't forget to try out the dark mode switcher at the top of the page!
+
+---
+
+## Links and Such
+
+- **Next.js** – React framework for SSR/SSG and routing
+  ([Next.js](https://nextjs.org/))
+- **React** – UI library ([React](https://react.dev/))
+- **TypeScript** – Type safety ([TypeScript](https://www.typescriptlang.org/))
+- **MDX** – Markdown + JSX for writing posts ([MDX](https://mdxjs.com/))
+- **Tailwind CSS** – Utility-first CSS framework
+  ([Tailwind CSS](https://tailwindcss.com/))
+- **@heroicons/react** – SVG icon set ([Heroicons](https://heroicons.com/))
+- **classnames** – Conditional className utility
+  ([classnames](https://www.npmjs.com/package/classnames))
+- **next-themes** – Theme switching (light/dark mode)
+  ([next-themes](https://github.com/pacocoursey/next-themes))
+- **Feed** – RSS feed generation ([feed](https://www.npmjs.com/package/feed))
+- **@codesandbox/sandpack-react** – Interactive code editor for posts
+  ([sandpack](https://sandpack.dev/))
+- **ESLint & Prettier** – Linting and code formatting
+- **PostCSS & Autoprefixer** – CSS processing
+- **Vercel** - Deployment and hosting platform ([Vercel](https://vercel.com/))
