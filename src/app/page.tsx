@@ -53,23 +53,25 @@ function Home() {
 
         <Prose>
           <h2>A Little About Me</h2>
-
           <p>
-            I&apos;m the Lead Frontend Engineer at{' '}
-            <Link href="https://dispel.com/">Dispel</Link>. I was formerly with{' '}
-            <Link href="https://cloud.google.com/">Google Cloud</Link> at both{' '}
+            I am a Staff Front-End and Full-Stack Engineer with 13 years of
+            experience in crafting scalable, performant web applications with
+            React and TypeScript. In my current role at{' '}
+            <Link href="https://dispel.com/">Dispel</Link> as a technical and
+            team lead, I drive architectural innovation and full-stack feature
+            development. My diverse background, including roles at
+            <Link href="https://cloud.google.com/">Google Cloud</Link> with{' '}
             <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and{' '}
-            <Link href="https://kaggle.com">Kaggle</Link>, and have been with
-            multiple successful startups over the course of my engineering
-            career that started in 2012.
+            <Link href="https://kaggle.com">Kaggle</Link>, underscores my
+            ability to lead impactful projects and navigate complex, large-scale
+            environments.
           </p>
 
           <p>
             My wife and I and our three kids are in the greater Portland area,
-            and love the Pacific Northwest. I enjoy woodworking, cooking, and
-            playing basketball.
+            and love the Pacific Northwest. I enjoy woodworking, cooking,
+            reading, and playing basketball and ultimate frisbee.
           </p>
-
           <div className="not-prose inline-flex">
             <ButtonLink href="/about">
               <span className="flex items-center gap-x-1">
