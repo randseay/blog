@@ -59,7 +59,7 @@ function Home() {
             React and TypeScript. In my current role at{' '}
             <Link href="https://dispel.com/">Dispel</Link> as a technical and
             team lead, I drive architectural innovation and full-stack feature
-            development. My diverse background, including roles at
+            development. My diverse background, including roles at{' '}
             <Link href="https://cloud.google.com/">Google Cloud</Link> with{' '}
             <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and{' '}
             <Link href="https://kaggle.com">Kaggle</Link>, underscores my
