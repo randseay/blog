@@ -19,8 +19,17 @@ body {
  * Highlight colors
  */
 :root {
-  --light-highlight: rgba(191, 219, 254, 0.5); /* Tailwind blue-200 at 50% opacity */
-  --dark-highlight: rgba(255, 201, 40, 0.2); /* Tailwind amber-300 at 20% opacity */
+  --light-selection: rgba(191, 219, 254, 0.3); /* Tailwind blue-200 at 30% opacity */
+  --light-selection-underline: #3b82f6; /* Tailwind blue-500 */
+  --dark-selection: rgba(255, 201, 40, 0.1); /* Tailwind amber-300 at 10% opacity */
+  --dark-selection-underline: #f59e42; /* Tailwind amber-300 */
+
+  /* Shared ::selection underline styles */
+  ::selection {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,21 +38,25 @@ body {
   }
 
   ::selection {
-    background-color: var(--dark-highlight);
+    background-color: var(--dark-selection);
+    text-decoration-color: var(--dark-selection-underline);
   }
 }
 
 @media (prefers-color-scheme: light) {
   ::selection {
-    background-color: var(--light-highlight);
+    background-color: var(--light-selection);
+    text-decoration-color: var(--light-selection-underline);
   }
 }
 
 /* Selection color for theme classes (for next-themes) */
  .dark ::selection {
-  background-color: var(--dark-highlight);
+  background-color: var(--dark-selection);
+  text-decoration-color: var(--dark-selection-underline);
 }
 
  .light ::selection {
-  background-color: var(--light-highlight);
+  background-color: var(--light-selection);
+  text-decoration-color: var(--light-selection-underline);
 }
