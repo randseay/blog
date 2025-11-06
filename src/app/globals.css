@@ -15,8 +15,35 @@ body {
   overflow-x: hidden;
 }
 
+/*
+ * Highlight colors
+ */
+:root {
+  --light-highlight: rgba(191, 219, 254, 0.5); /* Tailwind blue-200 at 50% opacity */
+  --dark-highlight: rgba(255, 201, 40, 0.2); /* Tailwind amber-300 at 20% opacity */
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
+  ::selection {
+    background-color: var(--dark-highlight);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background-color: var(--light-highlight);
+  }
+}
+
+/* Selection color for theme classes (for next-themes) */
+ .dark ::selection {
+  background-color: var(--dark-highlight);
+}
+
+ .light ::selection {
+  background-color: var(--light-highlight);
 }
