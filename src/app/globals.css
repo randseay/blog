@@ -51,12 +51,12 @@ body {
 }
 
 /* Selection color for theme classes (for next-themes) */
- .dark ::selection {
+.dark ::selection {
   background-color: var(--dark-selection);
   text-decoration-color: var(--dark-selection-underline);
 }
 
- .light ::selection {
+.light ::selection {
   background-color: var(--light-selection);
   text-decoration-color: var(--light-selection-underline);
 }

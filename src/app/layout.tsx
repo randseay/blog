@@ -1,5 +1,5 @@
-import { Inter, Roboto_Serif, Source_Code_Pro } from 'next/font/google';
 import { ServerThemeProvider } from 'next-themes';
+import { Inter, Roboto_Serif, Source_Code_Pro } from 'next/font/google';
 
 import Providers from './providers';
 
@@ -41,7 +41,7 @@ export default function RootLayout({
           className="bg-gray-100 text-gray-800 transition duration-300 dark:bg-gray-900 dark:text-white"
         >
           <Providers>
-            <div className="w-full border-b border-gray-300 dark:border-gray-700">
+            <div className="w-full border-gray-300 border-b dark:border-gray-700">
               <Header />
             </div>
             {children}

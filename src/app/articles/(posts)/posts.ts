@@ -1,7 +1,7 @@
-import * as HowIBuiltMyBlogContent from '@articles/(posts)/how-i-built-my-blog/content.mdx';
-import HowIBuiltMyBlogPost from '@articles/(posts)/how-i-built-my-blog/content.mdx';
 import * as ConnectionCapitalContent from '@articles/(posts)/connection-capital/content.mdx';
 import ConnectionCapitalPost from '@articles/(posts)/connection-capital/content.mdx';
+import * as HowIBuiltMyBlogContent from '@articles/(posts)/how-i-built-my-blog/content.mdx';
+import HowIBuiltMyBlogPost from '@articles/(posts)/how-i-built-my-blog/content.mdx';
 import * as InfiniteScrollContent from '@articles/(posts)/react-infinite-scroll/content.mdx';
 import InfiniteScrollPost from '@articles/(posts)/react-infinite-scroll/content.mdx';
 import { infiniteScrollFiles } from '@articles/(posts)/react-infinite-scroll/files';
@@ -53,5 +53,5 @@ export const published = posts
 
 // Collect all unique tags
 export const tags = Array.from(
-  new Set(published.flatMap((post) => post.tags || []))
+  new Set(published.flatMap((post) => post.tags || [])),
 ).sort((a, b) => a.localeCompare(b));

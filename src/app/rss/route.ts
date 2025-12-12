@@ -38,7 +38,7 @@ export async function GET() {
               Meta: () => null,
               Editor: () => EditorForRSS({ files: post.files }),
             },
-          })
+          }),
         ),
       });
     });

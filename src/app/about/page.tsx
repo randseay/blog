@@ -8,7 +8,7 @@ import Content from './content.mdx';
 export default function About() {
   return (
     <PageWrap>
-      <div className="flex mb-16">
+      <div className="mb-16 flex">
         <ButtonLink href="/" variant="secondary" className="gap-2">
           <ArrowLeftIcon className="h-5 w-5 stroke-2" />
           Back Home

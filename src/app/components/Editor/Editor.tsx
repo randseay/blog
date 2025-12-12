@@ -1,8 +1,8 @@
-import { type SandpackFiles, Sandpack } from '@codesandbox/sandpack-react';
+import { Sandpack, type SandpackFiles } from '@codesandbox/sandpack-react';
 
 export default function Editor({ files }: { files: SandpackFiles }) {
   return (
-    <div className="mx-0 xl:-mx-20">
+    <div className="xl:-mx-20 mx-0">
       <Sandpack
         files={files}
         template="react-ts"

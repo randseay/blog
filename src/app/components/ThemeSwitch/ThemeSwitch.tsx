@@ -5,8 +5,8 @@ import {
   MoonIcon,
   SunIcon,
 } from '@heroicons/react/24/outline';
-import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
@@ -22,13 +22,13 @@ export default function ThemeSwitch() {
 
   const changeTheme = () => {
     setTheme(
-      theme === 'dark' ? 'light' : theme === 'light' ? 'system' : 'dark'
+      theme === 'dark' ? 'light' : theme === 'light' ? 'system' : 'dark',
     );
   };
 
   return (
     <div className="flex items-center gap-x-1">
-      <p className="hidden font-light text-gray-500 dark:text-gray-400 sm:block">
+      <p className="hidden font-light text-gray-500 sm:block dark:text-gray-400">
         Theme
       </p>
 

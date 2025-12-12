@@ -5,7 +5,7 @@ export default function TaggedWith({ tags }: { tags: string[] }) {
 
   return (
     <div className="flex flex-wrap items-center gap-x-2">
-      <span className="text-base font-semibold sm:text-lg">tagged with</span>
+      <span className="font-semibold text-base sm:text-lg">tagged with</span>
       {tags.map((tag) => (
         <Tag key={`tag-${tag}`} tag={tag} />
       ))}

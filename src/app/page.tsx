@@ -6,8 +6,8 @@ import { Suspense } from 'react';
 import { published } from '@articles/(posts)/posts';
 import ButtonLink from '@components/ButtonLink';
 import DateTimeStamp from '@components/DateTimeStamp';
-import { GitHub, LinkedIn } from '@components/Icons';
 import IconButton from '@components/IconButton';
+import { GitHub, LinkedIn } from '@components/Icons';
 import PageWrap from '@components/PageWrap';
 import Prose from '@components/Prose';
 import TaggedWith from '@components/TaggedWith';
@@ -45,11 +45,11 @@ function Home() {
             width={275}
             height={275}
             priority
-            className="rounded-full outline outline-offset-8 outline-amber-500 dark:outline-blue-300 sm:mr-3"
+            className="rounded-full outline outline-amber-500 outline-offset-8 sm:mr-3 dark:outline-blue-300"
           />
         </div>
 
-        <hr className="my-16 w-full border-b border-gray-300 dark:border-gray-700" />
+        <hr className="my-16 w-full border-gray-300 border-b dark:border-gray-700" />
 
         <Prose>
           <h2>A Little About Me</h2>
@@ -81,7 +81,7 @@ function Home() {
           </div>
         </Prose>
 
-        <hr className="my-16 w-full border-b border-gray-300 dark:border-gray-700" />
+        <hr className="my-16 w-full border-gray-300 border-b dark:border-gray-700" />
 
         <Prose>
           <h2 className="flex items-center gap-x-4">
@@ -96,7 +96,7 @@ function Home() {
               <span className="flex flex-col gap-y-2">
                 <span>
                   <Link
-                    className="text-2xl font-bold sm:text-3xl"
+                    className="font-bold text-2xl sm:text-3xl"
                     href={lastPost.link}
                   >
                     {lastPost.title}

@@ -35,7 +35,7 @@ export default function Tag({ tag, variant = 'small', selected }: TagProps) {
       'bg-amber-500 text-white dark:bg-blue-500': selected,
       'bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-800 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200':
         !selected,
-    }
+    },
   );
 
   if (isArticlesPage) {

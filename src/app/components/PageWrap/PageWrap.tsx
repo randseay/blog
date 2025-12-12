@@ -10,7 +10,7 @@ export default function PageWrap({ children, className }: PageWrapProps) {
     <div
       className={classNames(
         'mx-auto my-16 flex w-full max-w-5xl flex-col px-4',
-        className
+        className,
       )}
     >
       {children}

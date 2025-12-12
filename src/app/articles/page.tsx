@@ -5,13 +5,13 @@ import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 
 import { published, tags } from '@articles/(posts)/posts';
+import DateTimeStamp from '@components/DateTimeStamp';
+import IconButton from '@components/IconButton';
 import PageWrap from '@components/PageWrap';
 import Prose from '@components/Prose';
-import DateTimeStamp from '@components/DateTimeStamp';
 import Tag from '@components/Tag';
 import TaggedWith from '@components/TaggedWith';
 import { RssIcon } from '@heroicons/react/24/outline';
-import IconButton from '@components/IconButton';
 
 function Articles() {
   const searchParams = useSearchParams();
@@ -42,14 +42,14 @@ function Articles() {
             />
           ))}
         </div>
-        <hr className="my-16 w-full border-b border-gray-300 dark:border-gray-700" />
+        <hr className="my-16 w-full border-gray-300 border-b dark:border-gray-700" />
         <div className="flex flex-col gap-y-10">
           {filteredPosts.map((post, i) =>
             !!post.published ? (
               <span key={`post-${i}`} className="flex flex-col gap-y-2">
                 <span>
                   <Link
-                    className="text-2xl font-bold sm:text-3xl"
+                    className="font-bold text-2xl sm:text-3xl"
                     href={post.link}
                   >
                     {post.title}
@@ -61,7 +61,7 @@ function Articles() {
                   <TaggedWith tags={post.tags} />
                 </span>
               </span>
-            ) : null
+            ) : null,
           )}
         </div>
       </Prose>
