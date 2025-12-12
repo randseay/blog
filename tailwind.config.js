@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', 'Helvetica', 'Arial', 'sans-serif'],
+        serif: ['var(--font-roboto-serif)', 'Garamond', 'serif'],
         mono: ['var(--font-source-code-pro)', 'Courier', 'monospace'],
         display: ['var(--font-roboto-serif)', 'Garamond', 'serif'],
       },
