@@ -54,17 +54,20 @@ function Home() {
         <Prose>
           <h2>A Little About Me</h2>
           <p>
-            I am a Staff Front-End and Full-Stack Engineer with 13 years of
-            experience in crafting scalable, performant web applications with
-            React and TypeScript. In my current role at{' '}
-            <Link href="https://dispel.com/">Dispel</Link> as a technical and
-            team lead, I drive architectural innovation and full-stack feature
-            development. My diverse background, including roles at{' '}
+            I am a Staff Front-End Engineer with 13 years of frontend and
+            full-stack experience building scalable web applications with React
+            and TypeScript, complemented by 3 years of engineering leadership.
+            At <Link href="https://ngrok.com/">ngrok</Link>, I am driving
+            architecture and implementation on the front-end platform team, and
+            evolving <Link href="https://mantle.ngrok.com/">Mantle</Link>, our
+            open-source component library. My background includes roles at{' '}
+            <Link href="https://dispel.com/">Dispel</Link>, and{' '}
             <Link href="https://cloud.google.com/">Google Cloud</Link> with{' '}
-            <Link href="https://cloud.google.com/bigquery">BigQuery</Link> and{' '}
-            <Link href="https://kaggle.com">Kaggle</Link>, underscores my
-            ability to lead impactful projects and navigate complex, large-scale
-            environments.
+            <Link href="https://cloud.google.com/bigquery">
+              Google BigQuery
+            </Link>{' '}
+            and <Link href="https://kaggle.com">Kaggle</Link>, underscoring my
+            ability to lead impactful projects in complex environments.
           </p>
 
           <p>
