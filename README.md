@@ -1,37 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog
+
+This is a personal blog project built with modern web technologies.
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+- [Next.js 15 (App Router)](https://nextjs.org/) - The React Framework for the Web
+- [React 19](https://react.dev/) - The library for web and native user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale
+- [Tailwind CSS](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML
+- [Biome](https://biomejs.dev/) - Fast formatter and linter
+- [MDX](https://mdxjs.com/) - Markdown for the component era
 
 ## Getting Started
 
-First, run the development server:
+**Prerequisites**: [Node.js](https://nodejs.org/) (version 20 or higher)
+
+Install dependencies:
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+Run the development server:
+
+```bash
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+In the project directory, you can run:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `yarn dev`: runs the app in development mode with Turbopack.
+- `yarn build`: builds the app for production. It also runs `yarn check` before building.
+- `yarn start`: runs the built app in production mode.
+- `yarn check`: runs Biome to check for linting and formatting issues.
+- `yarn format`: runs Biome to fix linting and formatting issues.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
+## Deploy
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
