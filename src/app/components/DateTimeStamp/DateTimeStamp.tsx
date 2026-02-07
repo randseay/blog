@@ -15,7 +15,7 @@ export function DateTimeStamp({ date }: { date?: string }) {
   return (
     <div className="flex items-center gap-x-2">
       <CalendarIcon className="h-5 w-5 stroke-2" />
-      <span className="font-semibold text-base sm:text-xl">{timestamp}</span>
+      <span className="text-base font-semibold sm:text-xl">{timestamp}</span>
     </div>
   );
 }

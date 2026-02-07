@@ -14,7 +14,7 @@ export default function ButtonLink({
   return (
     <Link
       className={classNames(
-        'flex items-center rounded-md p-2 font-semibold text-base sm:text-lg',
+        'flex items-center rounded-md p-2 text-base font-semibold sm:text-lg',
         {
           'bg-amber-500 px-4 text-white hover:bg-amber-400 dark:bg-blue-500 dark:text-gray-900 dark:hover:bg-blue-400':
             variant === 'primary',

@@ -42,14 +42,14 @@ function Articles() {
             />
           ))}
         </div>
-        <hr className="my-16 w-full border-gray-300 border-b dark:border-gray-700" />
+        <hr className="my-16 w-full border-b border-gray-300 dark:border-gray-700" />
         <div className="flex flex-col gap-y-10">
           {filteredPosts.map((post, i) =>
-            !!post.published ? (
+            post.published ? (
               <span key={`post-${i}`} className="flex flex-col gap-y-2">
                 <span>
                   <Link
-                    className="font-bold text-2xl sm:text-3xl"
+                    className="text-2xl font-bold sm:text-3xl"
                     href={post.link}
                   >
                     {post.title}

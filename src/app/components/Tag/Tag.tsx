@@ -41,7 +41,7 @@ export default function Tag({ tag, variant = 'small', selected }: TagProps) {
   if (isArticlesPage) {
     return (
       <button
-        role="button"
+        type="button"
         className={tagClassNames}
         onClick={() => setTag(tag === 'all' ? null : tag)}
       >

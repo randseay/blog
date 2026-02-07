@@ -28,7 +28,7 @@ export default function ThemeSwitch() {
 
   return (
     <div className="flex items-center gap-x-1">
-      <p className="hidden font-light text-gray-500 sm:block dark:text-gray-400">
+      <p className="hidden font-light text-gray-500 dark:text-gray-400 sm:block">
         Theme
       </p>
 

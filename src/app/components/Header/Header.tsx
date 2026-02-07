@@ -13,7 +13,7 @@ export default function Header() {
             <Logo />
           </div>
 
-          <h1 className="font-display font-light text-l sm:text-2xl">
+          <h1 className="text-l font-display font-light sm:text-2xl">
             Rand Seay
           </h1>
         </div>

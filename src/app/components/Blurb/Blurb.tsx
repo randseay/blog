@@ -5,7 +5,7 @@ import Prose from '@components/Prose';
 
 export default function Blurb() {
   return (
-    <div className="flex flex-col items-center gap-10 border-gray-200/80 border-t-2 pt-10 sm:flex-row dark:border-gray-800">
+    <div className="flex flex-col items-center gap-10 border-t-2 border-gray-200/80 pt-10 dark:border-gray-800 sm:flex-row">
       <div>
         <Image
           src="/2024-04-headshot.jpg"
@@ -13,7 +13,7 @@ export default function Blurb() {
           width={150}
           height={150}
           priority
-          className="flex-none rounded-full outline outline-amber-500 outline-offset-8 sm:mr-3 dark:outline-blue-300"
+          className="flex-none rounded-full outline outline-offset-8 outline-amber-500 dark:outline-blue-300 sm:mr-3"
         />
       </div>
       <Prose>
